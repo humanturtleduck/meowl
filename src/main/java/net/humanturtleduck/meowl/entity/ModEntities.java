@@ -9,6 +9,9 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+
+
+
 public class ModEntities {
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES =
             DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, MeowlMod.MOD_ID);
@@ -16,6 +19,7 @@ public class ModEntities {
     public static final RegistryObject<EntityType<MeowlEntity>> MEOWL =
             ENTITY_TYPES.register("meowl", () -> EntityType.Builder.of(MeowlEntity::new, MobCategory.CREATURE)
                     .sized(.5f, .5f).build("meowl"));
+
 
 
     public static void register(IEventBus eventBus) {

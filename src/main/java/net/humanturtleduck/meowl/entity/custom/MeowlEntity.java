@@ -22,6 +22,8 @@ import org.jetbrains.annotations.Nullable;
 import net.humanturtleduck.meowl.entity.ModEntities;
 
 public class MeowlEntity extends Animal {
+
+
     public MeowlEntity(EntityType<? extends Animal> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
     }
@@ -76,7 +78,7 @@ public class MeowlEntity extends Animal {
         return Animal.createLivingAttributes()
                 .add(Attributes.MAX_HEALTH, 5D)
                 .add(Attributes.FOLLOW_RANGE,24D)
-                .add(Attributes.MOVEMENT_SPEED, 05D);
+                .add(Attributes.MOVEMENT_SPEED, .25D);
     }
 
     @Nullable
@@ -101,6 +103,7 @@ public class MeowlEntity extends Animal {
     protected SoundEvent getHurtSound(DamageSource pDamageSource) {
         return SoundEvents.CAT_HURT;
     }
+
 
     @Nullable
     @Override
