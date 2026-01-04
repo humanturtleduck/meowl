@@ -8,6 +8,8 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.minecraft.world.level.levelgen.Heightmap;
+
 
 
 
@@ -18,7 +20,8 @@ public class ModEntities {
 
     public static final RegistryObject<EntityType<MeowlEntity>> MEOWL =
             ENTITY_TYPES.register("meowl", () -> EntityType.Builder.of(MeowlEntity::new, MobCategory.CREATURE)
-                    .sized(.5f, .5f).build("meowl"));
+                    .sized(.5f, .5f).clientTrackingRange(10).updateInterval(3)
+                    .build("meowl"));
 
 
 

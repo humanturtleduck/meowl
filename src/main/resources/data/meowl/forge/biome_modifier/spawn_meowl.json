@@ -1,0 +1,13 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "minecraft:forest",
+    "minecraft:birch_forest"
+  ],
+  "spawners": {
+    "type": "meowl:meowl",
+    "maxCount": 5,
+    "minCount": 3,
+    "weight": 25
+  }
+}
